@@ -12,7 +12,7 @@ WORKDIR /app
 COPY composer.json composer.lock ./
 RUN composer install --no-dev --no-scripts --no-interaction --prefer-dist --ignore-platform-reqs
 COPY . .
-RUN composer dump-autoload --optimize --no-dev
+RUN composer dump-autoload --optimize --no-dev --no-scripts
 
 FROM php:8.4-fpm-alpine
 
