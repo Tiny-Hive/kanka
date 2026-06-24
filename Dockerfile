@@ -2,7 +2,7 @@ FROM node:22-alpine AS assets
 WORKDIR /app
 COPY package.json yarn.lock ./
 RUN yarn install --frozen-lockfile
-COPY vite.config.js tailwind.config.js postcss.config.js ./
+COPY vite.config.js tailwind.config.js ./
 COPY resources/ resources/
 COPY public/ public/
 RUN yarn build
