@@ -63,7 +63,7 @@ const initVisibilityPickers = () => {
 
                             const status = opt.querySelector('.visibility-picker-status');
                             status.innerHTML = isSelected
-                                ? '<i class="fa-regular fa-check text-primary" aria-hidden="true"></i>'
+                                ? '<i class="fa-solid fa-check text-primary" aria-hidden="true"></i>'
                                 : '';
                         });
 
@@ -76,7 +76,7 @@ const initVisibilityPickers = () => {
 
                         if (prevOption) {
                             prevOption.querySelector('.visibility-picker-status').innerHTML =
-                                '<i class="fa-regular fa-check text-primary" aria-hidden="true"></i>';
+                                '<i class="fa-solid fa-check text-primary" aria-hidden="true"></i>';
                         }
 
                         window.showToast('Failed to update visibility.', 'error');
@@ -138,7 +138,7 @@ const initVisibilityPickerFields = () => {
 
                     const status = opt.querySelector('.visibility-picker-field-status');
                     status.innerHTML = isSelected
-                        ? '<i class="fa-regular fa-check text-primary" aria-hidden="true"></i>'
+                        ? '<i class="fa-solid fa-check text-primary" aria-hidden="true"></i>'
                         : '';
                 });
 

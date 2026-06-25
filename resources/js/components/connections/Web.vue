@@ -5,13 +5,13 @@
     <!-- Bottom toolbar -->
     <div v-if="ready" class="fixed bottom-4 left-1/2 -translate-x-1/2 z-700 flex items-center gap-1.5 bg-base-100/80 backdrop-blur rounded-xl shadow-lg px-2 py-1.5">
         <a v-if="ready" :href="urls.back" :title="trans('back')" class="btn2 btn-ghost" tabindex="0">
-            <i class="fa-regular fa-home" aria-hidden="true"></i>
+            <i class="fa-solid fa-home" aria-hidden="true"></i>
         </a>
 
         <!-- Zone 1: Plus FAB -->
         <div v-if="props.creator" class="relative">
             <button @click.prevent="fabDropdown = !fabDropdown" class="btn2 btn-primary" :title="trans('create')">
-                <i class="fa-regular fa-plus" aria-hidden="true"></i>
+                <i class="fa-solid fa-plus" aria-hidden="true"></i>
             </button>
             <div
                 v-if="fabDropdown"
@@ -20,11 +20,11 @@
                 role="menu"
             >
                 <a href="#" @click.prevent="fabDropdown = false; openQQ()" class="flex items-center gap-2 px-3 py-1.5 rounded hover:bg-base-200 cursor-pointer whitespace-nowrap">
-                    <i class="fa-regular fa-bolt w-5" aria-hidden="true"></i>
+                    <i class="fa-solid fa-bolt w-5" aria-hidden="true"></i>
                     <span v-html="trans('create')"></span>
                 </a>
                 <a href="#" @click.prevent="fabDropdown = false; openCreate()" class="flex items-center gap-2 px-3 py-1.5 rounded hover:bg-base-200 cursor-pointer whitespace-nowrap">
-                    <i class="fa-regular fa-link w-5" aria-hidden="true"></i>
+                    <i class="fa-solid fa-link w-5" aria-hidden="true"></i>
                     <span v-html="trans('add')"></span>
                 </a>
             </div>
@@ -32,10 +32,10 @@
 
         <!-- Zone 2: View controls -->
         <button @click.prevent="zoomToFit()" class="btn2 btn-ghost rounded-lg" :title="trans('zoom-fit')">
-            <i class="fa-regular fa-expand" aria-hidden="true"></i>
+            <i class="fa-solid fa-expand" aria-hidden="true"></i>
         </button>
         <button @click.prevent="resetLayout()" class="btn2 btn-ghost" :title="trans('reset-layout')">
-            <i class="fa-regular fa-grip" aria-hidden="true"></i>
+            <i class="fa-solid fa-grip" aria-hidden="true"></i>
         </button>
 
         <div class="w-px h-6 bg-base-content/20"></div>
@@ -43,7 +43,7 @@
         <!-- Zone 3: Export -->
         <div class="relative">
             <button @click.prevent="downloadDropdown = !downloadDropdown" class="btn2 btn-ghost" :title="trans('download')">
-                <i class="fa-regular fa-download" aria-hidden="true"></i>
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
             </button>
             <div
                 v-if="downloadDropdown"
@@ -52,11 +52,11 @@
                 role="menu"
             >
                 <a @click.prevent="downloadPng()" class="flex items-center gap-2 px-3 py-1.5 rounded-xl hover:bg-base-200 cursor-pointer whitespace-nowrap">
-                    <i class="fa-regular fa-image w-5" aria-hidden="true"></i>
+                    <i class="fa-solid fa-image w-5" aria-hidden="true"></i>
                     <span v-html="trans('download-png')"></span>
                 </a>
                 <a @click.prevent="downloadPdf()" class="flex items-center gap-2 px-3 py-1.5 rounded-xl hover:bg-base-200 cursor-pointer whitespace-nowrap">
-                    <i class="fa-regular fa-file-pdf w-5" aria-hidden="true"></i>
+                    <i class="fa-solid fa-file-pdf w-5" aria-hidden="true"></i>
                     <span v-html="trans('download-pdf')"></span>
                 </a>
             </div>

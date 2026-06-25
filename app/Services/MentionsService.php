@@ -233,7 +233,7 @@ class MentionsService
     {
         $this->text = preg_replace_callback('`\[([a-z_-]+):(.*?)\]`i', function ($matches) {
             // Icons
-            $fontAwesomes = ['fa ', 'fas ', 'far ', 'fab ', 'ra ', 'fa-solid ', 'fa-regular ', 'fa-brands '];
+            $fontAwesomes = ['fa ', 'fas ', 'far ', 'fab ', 'ra ', 'fa-solid ', 'fa-solid ', 'fa-brands '];
             if ($matches[1] == 'icon' && Str::startsWith($matches[2], $fontAwesomes)) {
                 return '<i class="' . e($matches[2]) . '" aria-hidden="true"></i>';
             }

@@ -126,7 +126,7 @@ class AchievementService
                 'module' => $this->moduleName('event'),
             ],
             'dead' => [
-                'icon' => 'fa-regular fa-skull',
+                'icon' => 'fa-solid fa-skull',
                 'amount' => $dead,
                 'target' => $this->target($dead, 2),
                 'level' => $this->level($dead, 2),
@@ -232,14 +232,14 @@ class AchievementService
                 'goal' => __('campaigns/stats.achievements.murderer.goal'),
                 'amount' => $dead,
                 'target' => 100,
-                'icon' => 'fa-regular fa-skull',
+                'icon' => 'fa-solid fa-skull',
             ],
             'calendars' => [
                 'title' => __('campaigns/stats.achievements.calendars.title'),
                 'goal' => __('campaigns/stats.achievements.calendars.goal'),
                 'amount' => $calendars,
                 'target' => 3,
-                'icon' => 'fa-regular fa-calendar',
+                'icon' => 'fa-solid fa-calendar',
             ],
         ];
 

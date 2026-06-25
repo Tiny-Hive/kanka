@@ -22,7 +22,7 @@
         </div>
     @else
         <p class="text-orange-500 dark:text-orange-300">
-            <x-icon class="fa-regular fa-exclamation-triangle" />
+            <x-icon class="fa-solid fa-exclamation-triangle" />
            This application will have full access to your account and campaigns.
         </p>
     @endif
@@ -50,7 +50,7 @@
             <input type="hidden" name="client_id" value="{{ $client->id }}">
             <input type="hidden" name="auth_token" value="{{ $authToken }}">
             <button class="w-full rounded border border-red-500 text-red-500 uppercase px-6 py-2 transition-all bg-white hover:shadow-xs hover:bg-red-500 hover:text-white dark:bg-slate-800">
-                <x-icon class="fa-regular fa-ban" />
+                <x-icon class="fa-solid fa-ban" />
                 Deny
             </button>
         </form>

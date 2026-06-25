@@ -39,10 +39,10 @@ watch(() => props.items, () => {
 })
 
 const sectionConfig: Record<SectionType, { label: string; icon: string }> = {
-    entities: { label: 'Entries', icon: 'fa-regular fa-bookmark' },
-    posts: { label: 'Articles', icon: 'fa-regular fa-newspaper' },
-    attributes: { label: 'Properties', icon: 'fa-regular fa-heart' },
-    new: { label: 'Create New', icon: 'fa-regular fa-plus' },
+    entities: { label: 'Entries', icon: 'fa-solid fa-bookmark' },
+    posts: { label: 'Articles', icon: 'fa-solid fa-newspaper' },
+    attributes: { label: 'Properties', icon: 'fa-solid fa-heart' },
+    new: { label: 'Create New', icon: 'fa-solid fa-plus' },
 }
 
 const sections = computed<Section[]>(() => {
@@ -146,7 +146,7 @@ defineExpose({
                 >
                     <div class="flex gap-2 items-center">
                         <template v-if="section.key === 'new'">
-                            <i class="fa-regular fa-plus text-success" aria-hidden="true"></i>
+                            <i class="fa-solid fa-plus text-success" aria-hidden="true"></i>
                         </template>
                         <img
                             v-else-if="item.image"
@@ -158,7 +158,7 @@ defineExpose({
                         <span class="mention-name flex gap-1">
                             <span v-html="item.name"></span>
                             <template v-if="item.alias_name">
-                                <i class="fa-regular fa-masks-theater" aria-hidden="true"></i>
+                                <i class="fa-solid fa-masks-theater" aria-hidden="true"></i>
                                 ({{ item.alias_name }})
                             </template>
                         </span>

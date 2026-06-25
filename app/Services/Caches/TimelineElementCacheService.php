@@ -21,7 +21,7 @@ class TimelineElementCacheService extends BaseCache
                 'fa-solid fa-home',
                 'ra ra-capitol',
                 'fa-solid fa-skull',
-                'fa-regular fa-coinss',
+                'fa-solid fa-coinss',
                 'ra ra-beer',
                 'fa-solid fa-map-marker-alt',
                 'fa-solid fa-thumbtack',

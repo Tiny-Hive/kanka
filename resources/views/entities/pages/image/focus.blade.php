@@ -63,7 +63,7 @@ $source = empty($entity->image_path) && !empty($entity->image_uuid) ? $entity->i
             </p>
         </x-alert>
         <a href="{{ route('entities.show', [$campaign, $entity]) }}" class="text-link">
-            <x-icon class="fa-regular fa-arrow-left" />
+            <x-icon class="fa-solid fa-arrow-left" />
             {{ __('crud.actions.back') }}
         </a>
     @endif

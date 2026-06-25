@@ -17,7 +17,7 @@
                 <!-- Empty / drag state -->
                 <template v-if="!hasImage() && !uploading">
                     <i
-                        class="fa-regular fa-camera text-xl text-neutral-content"
+                        class="fa-solid fa-camera text-xl text-neutral-content"
                         aria-hidden="true"
                     ></i>
                 </template>
@@ -59,7 +59,7 @@
                             @click.stop="cancelUpload"
                         >
                             <i
-                                class="fa-regular fa-xmark"
+                                class="fa-solid fa-xmark"
                                 aria-hidden="true"
                             ></i>
                             {{ trans.cancel }}
@@ -85,7 +85,7 @@
                 <div
                     class="flex items-center justify-center w-6 h-6 rounded text-xs shrink-0 text-neutral-content"
                 >
-                    <i class="fa-regular fa-upload" aria-hidden="true"></i>
+                    <i class="fa-solid fa-upload" aria-hidden="true"></i>
                 </div>
                 <div class="flex flex-col gap-0">
                     <span class="text-sm font-medium">{{ trans.upload }}</span>
@@ -111,7 +111,7 @@
                         :class="
                             downloading
                                 ? 'fa-solid fa-spin fa-spinner'
-                                : 'fa-regular fa-link'
+                                : 'fa-solid fa-link'
                         "
                         aria-hidden="true"
                     ></i>
@@ -137,7 +137,7 @@
                 <div
                     class="flex items-center justify-center w-6 h-6 rounded text-xs shrink-0 text-neutral-content"
                 >
-                    <i class="fa-regular fa-images" aria-hidden="true"></i>
+                    <i class="fa-solid fa-images" aria-hidden="true"></i>
                 </div>
                 <span class="text-sm font-medium">{{ trans.gallery }}</span>
             </button>
@@ -156,7 +156,7 @@
                     class="flex items-center justify-center w-6 h-6 rounded text-xs shrink-0"
                 >
                     <i
-                        class="fa-regular fa-trash w-4 shrink-0 text-center"
+                        class="fa-solid fa-trash w-4 shrink-0 text-center"
                         aria-hidden="true"
                     ></i>
                 </div>
@@ -203,7 +203,7 @@
                 @click="closeDialog(cta)"
                 title="Close"
             >
-                <i class="fa-regular fa-circle-xmark" aria-hidden="true"></i>
+                <i class="fa-solid fa-circle-xmark" aria-hidden="true"></i>
                 <span class="sr-only">Close</span>
             </button>
         </header>
@@ -216,7 +216,7 @@
         <footer class="p-4 md:px-6" v-if="!hasPremium">
             <menu class="">
                 <a v-bind:href="props.cta" class="btn2 btn-primary">
-                    <i class="fa-regular fa-gem" aria-hidden="true" />
+                    <i class="fa-solid fa-gem" aria-hidden="true" />
                     <span v-html="trans.cta_action"></span>
                 </a>
             </menu>

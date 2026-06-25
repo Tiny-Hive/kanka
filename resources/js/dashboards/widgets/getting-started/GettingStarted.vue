@@ -22,8 +22,8 @@
             class="flex items-center gap-2 task"
             v-tippy="task.helper">
                 <div class="task-icon">
-                    <i class="fa-regular fa-square-check" aria-label="Completed" v-if="task.completed"></i>
-                    <i class="fa-regular fa-square" aria-label="Pending" v-else></i>
+                    <i class="fa-solid fa-square-check" aria-label="Completed" v-if="task.completed"></i>
+                    <i class="fa-solid fa-square" aria-label="Pending" v-else></i>
                 </div>
                 <a
                     v-if="!task.completed"
