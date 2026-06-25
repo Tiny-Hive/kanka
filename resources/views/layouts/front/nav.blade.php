@@ -35,15 +35,15 @@
     @endif
     <div class="block lg:hidden text-5xl text-blue" id="nav-mobile-toggler">
         <div class="cursor-pointer open" aria-label="Open menu">
-            <x-icon class="fa-thin fa-bars" />
+            <x-icon class="fa-solid fa-bars" />
         </div>
         <div class="cursor-pointer close" aria-label="Close menu">
-            <x-icon class="fa-thin fa-times" />
+            <x-icon class="fa-solid fa-times" />
         </div>
 
         <div class="mobile-menu fixed top-0 bottom-0 left-0 right-0 px-5 w-full bg-white">
             <div class="h-32 flex justify-end items-center">
-                <x-icon class="fa-thin fa-times text-5xl text-blue cursor-pointer" />
+                <x-icon class="fa-solid fa-times text-5xl text-blue cursor-pointer" />
             </div>
             <div class="px-16 flex flex-col gap-6 items-center">
                 @auth()

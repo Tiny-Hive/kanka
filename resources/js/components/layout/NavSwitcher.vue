@@ -112,7 +112,7 @@
                                 <div class="text-base-content" v-else>
                                     {{ profile.subscription.call_to_action }}
                                     <div class="link flex gap-1 items-center">{{ profile.subscription.call_to_action_2 }}
-                                        <i class="fa-duotone fa-credit-card" aria-hidden="true" v-if="pro"></i>
+                                        <i class="fa-solid fa-credit-card" aria-hidden="true" v-if="pro"></i>
                                         <i class="fa-regular fa-credit-card" aria-hidden="true" v-else></i>
                                         <i class="fa-brands fa-paypal" aria-hidden="true"></i>
                                     </div>

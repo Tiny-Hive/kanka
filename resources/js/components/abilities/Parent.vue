@@ -18,8 +18,8 @@
             </div>
             <div class="flex-none self-end">
                 <span role="button" @click="click(group)" class="cursor-pointer inline-block">
-                    <i v-if="!collapsed" aria-hidden="true" class="fa-thin fa-chevron-circle-up fa-2x"></i>
-                    <i v-else aria-hidden="true" class="fa-thin fa-chevron-circle-down fa-2x"></i>
+                    <i v-if="!collapsed" aria-hidden="true" class="fa-solid fa-chevron-circle-up fa-2x"></i>
+                    <i v-else aria-hidden="true" class="fa-solid fa-chevron-circle-down fa-2x"></i>
                     <span class="sr-only" v-if="!collapsed">Expand section</span>
                     <span class="sr-only" v-else>Collapse section</span>
                 </span>

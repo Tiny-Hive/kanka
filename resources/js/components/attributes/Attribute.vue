@@ -4,7 +4,7 @@
             <p v-html="attribute.template.text" class="text-neutral-content"></p>
         </div>
         <div class="w-6 md:w-8 pt-2" v-if="!attribute.is_hidden">
-            <i class="fa-light fa-grip-vertical handle cursor-move" aria-hidden="true"/>
+            <i class="fa-solid fa-grip-vertical handle cursor-move" aria-hidden="true"/>
         </div>
         <div class="w-6 md:w-8 pt-2" v-else>
             <i class="fa-regular fa-user-secret" aria-hidden="true"/>

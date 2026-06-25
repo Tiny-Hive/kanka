@@ -74,7 +74,7 @@ class ModuleService
     public function defaultIcon(EntityType $entityType): string
     {
         if (config('fontawesome.kit')) {
-            return 'fa-duotone ' . $entityType->icon;
+            return 'fa-solid ' . $entityType->icon;
         }
 
         return 'fa-regular ' . $entityType->icon;

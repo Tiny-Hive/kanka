@@ -65,19 +65,19 @@ if ($item->item) {
                 @if ($item->item)
                     @if (!empty($item->item->price))
                         <div class="object-price truncate" x-cloak x-show="showPrice" data-toggle="tooltip" data-title="{{ $item->item->price }}">
-                            <x-icon class="fa-duotone fa-coins text-accent" />
+                            <x-icon class="fa-solid fa-coins text-accent" />
                             {{ $item->item->price }}
                         </div>
                     @endif
                     @if (!empty($item->item->size))
                         <div class="object-size truncate" x-cloak x-show="showSize" data-toggle="tooltip" data-title="{{ $item->item->size }}">
-                            <x-icon class="fa-duotone fa-up-right-and-down-left-from-center text-accent" />
+                            <x-icon class="fa-solid fa-up-right-and-down-left-from-center text-accent" />
                             {{ $item->item->size }}
                         </div>
                     @endif
                     @if (!empty($item->item->weight))
                         <div class="object-weight truncate" x-cloak x-show="showWeight" data-toggle="tooltip" data-title="{{ $item->item->weight }}">
-                            <x-icon class="fa-duotone fa-weight-hanging text-accent" />
+                            <x-icon class="fa-solid fa-weight-hanging text-accent" />
                             {{ $item->item->weight }}
                         </div>
                     @endif

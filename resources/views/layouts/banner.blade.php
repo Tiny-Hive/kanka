@@ -37,7 +37,7 @@
                 {!! __('subscriptions/free-trial.pitch.title') !!}<br />
 
                 <a href="{{ route('settings.free-trial') }}" class="font-bold underline text-link">
-                    <x-icon class="fa-duotone fa-sparkles" /> {!! __('subscriptions/free-trial.actions.accept') !!}
+                    <x-icon class="fa-solid fa-sparkles" /> {!! __('subscriptions/free-trial.actions.accept') !!}
                 </a>
             </p>
 
