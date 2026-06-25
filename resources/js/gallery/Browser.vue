@@ -21,7 +21,7 @@
                         :class="mode === 'large' ? 'bg-base-100' : 'bg-transparent text-neutral-content'"
                         @click="toggle('large')"
                     >
-                        <i class="fa-regular fa-grid-2" aria-hidden="true"></i>
+                        <i class="fa-regular fa-table-cells" aria-hidden="true"></i>
                         {{ trans.browse.layouts.large }}
                     </button>
                     <button
@@ -30,7 +30,7 @@
                         :class="mode === 'small' ? 'bg-base-100' : 'bg-transparent text-neutral-content'"
                         @click="toggle('small')"
                     >
-                        <i class="fa-regular fa-grid-4" aria-hidden="true"></i>
+                        <i class="fa-regular fa-table-cells" aria-hidden="true"></i>
                          {{ trans.browse.layouts.small }}
                     </button>
                 </div>

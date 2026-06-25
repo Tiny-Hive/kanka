@@ -21,7 +21,7 @@ class MapMarkerCacheService extends BaseCache
                 'fa-solid fa-home',
                 'ra ra-capitol',
                 'fa-solid fa-skull',
-                'fa-solid fa-coins',
+                'fa-solid fa-coinss',
                 'ra ra-beer',
                 'fa-solid fa-map-marker-alt',
                 'fa-solid fa-thumbtack',

@@ -16,7 +16,7 @@
 
     <div class="flex gap-4 items-center justify-center flex-col lg:flex-row">
         <a href="{{ \App\Facades\Domain::toFront('campaigns') }}" class="text-link">
-            <x-icon class="fa-regular fa-sparkles" />
+            <x-icon class="fa-regular fa-wand-magic-sparkles" />
             {{ __('lists.actions.public') }}
         </a>
         @if (isset($enityType) && $enityType->isStandard())

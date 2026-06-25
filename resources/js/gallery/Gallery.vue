@@ -45,7 +45,7 @@
 
                 <div class="relative">
                     <button class="btn2 btn-default btn-sm" @click="toggleSort">
-                        <i class="fa-regular fa-arrow-up-arrow-down" aria-hidden="true" />
+                        <i class="fa-regular fa-arrows-up-down" aria-hidden="true" />
                         <span v-html="trans('sort')" class="hidden md:inline"></span>
                         <span v-if="sortAsc || sortDesc">(1)</span>
                     </button>

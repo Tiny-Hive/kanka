@@ -453,7 +453,7 @@ class CampaignDashboardWidget extends Model
         } elseif ($this->widget === Widget::Campaign) {
             return 'fa-regular fa-th-list';
         } elseif ($this->widget === Widget::Welcome) {
-            return 'fa-regular fa-party-horn';
+            return 'fa-regular fa-champagne-glasses';
         } elseif ($this->widget === Widget::Onboarding) {
             return 'fa-regular fa-calendar-check';
         } elseif ($this->widget === Widget::Gallery) {

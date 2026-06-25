@@ -215,7 +215,7 @@ const pinnedToggle = (attribute) => {
 
 const privateClass = (attribute) => {
     if (attribute.is_private) {
-        return 'fa-solid fa-lock-keyhole'
+        return 'fa-solid fa-lock'
     }
     return 'fa-regular fa-unlock-keyhole'
 }

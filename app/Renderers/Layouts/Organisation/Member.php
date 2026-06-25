@@ -81,7 +81,7 @@ class Member extends Layout
                             __('entities.character') .
                             '"></i>';
                     } elseif ($model->pinnedToOrganisation()) {
-                        return '<i class="fa-regular fa-screen-users" data-toggle="tooltip" data-title="' .
+                        return '<i class="fa-regular fa-users" data-toggle="tooltip" data-title="' .
                             __('entities.organisation') .
                             '"></i>';
                     }

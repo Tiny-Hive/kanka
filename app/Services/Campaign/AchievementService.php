@@ -69,7 +69,7 @@ class AchievementService
 
         $stats = [
             'spotlighted' => [
-                'icon' => 'fa-solid fa-stars',
+                'icon' => 'fa-solid fa-star',
                 'amount' => $spotlight ? 1 : 0,
                 'target' => 1,
                 'level' => $spotlight ? 5 : 0,

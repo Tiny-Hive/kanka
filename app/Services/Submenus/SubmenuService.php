@@ -33,7 +33,7 @@ class SubmenuService
             'entity' => true,
             'button' => isset($this->user) && $this->user->can('update', $this->entity) ? [
                 'url' => route('entities.story.reorder', [$this->campaign, $this->entity]),
-                'icon' => 'fa-regular fa-arrow-up-arrow-down',
+                'icon' => 'fa-regular fa-arrows-up-down',
                 'tooltip' => __('entities/story.reorder.icon_tooltip'),
             ] : null,
         ];

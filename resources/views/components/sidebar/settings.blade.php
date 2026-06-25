@@ -14,7 +14,7 @@
             <li class="px-2 section-overview {{ $active('overview') }}">
                 <x-sidebar.element
                     :url="route('overview', [$campaign])"
-                    icon="fa-solid fa-block"
+                    icon="fa-solid fa-ban"
                     :text="__('crud.tabs.overview')"
                 ></x-sidebar.element>
             </li>
@@ -88,7 +88,7 @@
                         <li class="px-2 section-modules {{ $active(['modules', 'entity_types']) }}">
                             <x-sidebar.element
                                 :url="route('campaign.modules', [$campaign])"
-                                icon="fa-solid fa-floppy-disks"
+                                icon="fa-solid fa-floppy-disk"
                                 :text="__('campaigns/categories.tab')"
                             ></x-sidebar.element>
                         </li>
@@ -172,7 +172,7 @@
                             <li class="px-2 section-webhooks {{ $active('webhooks') }}">
                                 <x-sidebar.element
                                     :url="route('webhooks.index', [$campaign])"
-                                    icon="fa-solid fa-webhook"
+                                    icon="fa-solid fa-link"
                                     :text="__('campaigns.show.tabs.webhooks')"
                                     premium
                                 ></x-sidebar.element>

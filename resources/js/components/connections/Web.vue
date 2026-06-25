@@ -32,10 +32,10 @@
 
         <!-- Zone 2: View controls -->
         <button @click.prevent="zoomToFit()" class="btn2 btn-ghost rounded-lg" :title="trans('zoom-fit')">
-            <i class="fa-regular fa-arrows-maximize" aria-hidden="true"></i>
+            <i class="fa-regular fa-expand" aria-hidden="true"></i>
         </button>
         <button @click.prevent="resetLayout()" class="btn2 btn-ghost" :title="trans('reset-layout')">
-            <i class="fa-regular fa-grid-round" aria-hidden="true"></i>
+            <i class="fa-regular fa-grip" aria-hidden="true"></i>
         </button>
 
         <div class="w-px h-6 bg-base-content/20"></div>

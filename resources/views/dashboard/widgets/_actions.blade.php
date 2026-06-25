@@ -126,7 +126,7 @@
                 {{ __('campaigns.show.tabs.roles') }}
             </x-dropdowns.item>
 
-            <x-dropdowns.item :link="route('campaign.modules', $campaign)" icon="fa-regular fa-floppy-disks">
+            <x-dropdowns.item :link="route('campaign.modules', $campaign)" icon="fa-regular fa-floppy-disk">
                 {{ __('campaigns/categories.tab') }}
             </x-dropdowns.item>
         </div>

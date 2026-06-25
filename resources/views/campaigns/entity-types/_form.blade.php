@@ -58,7 +58,7 @@
         :label="__('campaigns/modules.fields.icon')"
         :helper="__('campaigns/modules.helpers.icon', [
         'fontawesome' => '<a href=\'' . config('fontawesome.search') . '\' class=\'text-link\'>FontAwesome</a>',
-        'example' => '<i class=\'fa-solid fa-flask-round-potion\' aria-hidden=\'true\'></i>  <code>fa-solid fa-flask-round-potion</code>',
+        'example' => '<i class=\'fa-solid fa-flask\' aria-hidden=\'true\'></i>  <code>fa-solid fa-flask</code>',
         ])"
     >
         <input type="text" name="icon" value="{{ old('icon', $entityType->icon ?? '') }}" maxlength="100" placeholder="fa-solid fa-car" class="w-full" list="module-icon-list" autocomplete="off" data-paste="fontawesome" />

@@ -15,7 +15,7 @@
                         @if ($inventory->item->price)
                             <div class="flex gap-2 items-center">
                                 <div class="text-accent text-3xl">
-                                    <x-icon class="fa-solid fa-coins" />
+                                    <x-icon class="fa-solid fa-coinss" />
                                 </div>
                                 <div class="flex flex-col gap-0">
                                     <div class="font-extrabold text-xl">

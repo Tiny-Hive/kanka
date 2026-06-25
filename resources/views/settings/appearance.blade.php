@@ -20,7 +20,7 @@ $highlightClass = 'shadow-xs border-primary border-solid border-2';
                 <div class="{{ $boxClass }} {{ $highlight === 'dark' ? $highlightClass : '' }}">
                     <div class="flex gap-2 justify-between items-center mb-2">
                         <div class="font-light text-xl flex items-center gap-2">
-                            <x-icon class="fa-regular fa-moon-over-sun" />
+                            <x-icon class="fa-regular fa-circle-half-stroke" />
                             {{ __('settings/appearance.fields.theme') }}
                         </div>
                         <a href="https://docs.kanka.io/en/latest/account/appearance.html#theme" target="_blank" class="text-link" data-tooltip data-title="{{ __('settings/appearance.actions.learn-more') }}">
@@ -96,7 +96,7 @@ $highlightClass = 'shadow-xs border-primary border-solid border-2';
                         x-data="{ editor: '{{ auth()->user()->editor }}' }">
                         <div class="flex gap-2 justify-between">
                             <div class="font-light text-xl flex items-center gap-2">
-                                <x-icon class="fa-regular fa-typewriter" />
+                                <x-icon class="fa-regular fa-keyboard" />
                                 {{ __('settings/appearance.fields.editor') }}
                             </div>
                             <a href="https://docs.kanka.io/en/latest/account/appearance.html#text-editor" target="_blank" class="text-link" data-tooltip data-title="{{ __('settings/appearance.actions.learn-more') }}">

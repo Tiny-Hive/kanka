@@ -165,7 +165,7 @@
                         "
                         v-tippy="i18n.layout_grid"
                     >
-                        <i class="fa-regular fa-grid-2" aria-hidden="true"></i>
+                        <i class="fa-regular fa-table-cells" aria-hidden="true"></i>
                     </button>
                     <button
                         @click="
@@ -410,7 +410,7 @@
                     :href="emptyState.publicUrl"
                     class="text-link flex gap-1 items-center"
                 >
-                    <i class="fa-regular fa-sparkles" aria-hidden="true"></i>
+                    <i class="fa-regular fa-wand-magic-sparkles" aria-hidden="true"></i>
                     <span v-html="emptyState.public"></span>
                 </a>
                 <a

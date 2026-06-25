@@ -19,7 +19,7 @@
             <input type="text" v-bind:placeholder="trans('actions.search')" class="grow md:flex-none md:w-80" v-model="searchTerm" v-if="!hasSelected()" />
             <div class="relative" v-if="!hasSelected()">
                 <a role="button" @click="toggleFilters()" class="btn2 btn-outline btn-sm">
-                    <i class="fa-regular fa-bars-filter" aria-hidden="true" />
+                    <i class="fa-regular fa-filter" aria-hidden="true" />
                     <span v-html="trans('actions.filters')"></span>
                 </a>
                 <div class="border border-base-300 shadow-sm rounded bg-base-100 p-4 absolute right-0 flex flex-col gap-5 w-60" v-if="showFilters"  v-click-outside="onClickOutside">

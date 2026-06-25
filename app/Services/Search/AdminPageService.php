@@ -61,7 +61,7 @@ class AdminPageService
             ],
             [
                 'name' => __('campaigns.show.tabs.webhooks'),
-                'icon' => 'fa-regular fa-webhook',
+                'icon' => 'fa-regular fa-link',
                 'url' => route('webhooks.index', $campaign),
                 'group' => 'admin',
             ],
@@ -73,7 +73,7 @@ class AdminPageService
             ],
             [
                 'name' => __('campaigns/categories.tab'),
-                'icon' => 'fa-regular fa-floppy-disks',
+                'icon' => 'fa-regular fa-floppy-disk',
                 'url' => route('campaign.modules', $campaign),
                 'group' => 'admin',
             ],
@@ -103,7 +103,7 @@ class AdminPageService
             ],
             [
                 'name' => __('campaigns.show.tabs.gallery'),
-                'icon' => 'fa-regular fa-files',
+                'icon' => 'fa-regular fa-copy',
                 'url' => route('gallery', $campaign),
                 'group' => 'admin',
             ],

@@ -18,7 +18,7 @@
     <div class="toolbar fixed w-full bg-base-100 p-2 flex items-center justify-between gap-2 z-50" v-if="!loading && !error">
         <div class="flex gap-1 items-center">
             <a :href="urls.overview" :title="trans('back')" class="flex items-center gap-1">
-                <i class="fa-regular fa-left-to-bracket" aria-hidden="true"></i>
+                <i class="fa-regular fa-right-from-bracket" aria-hidden="true"></i>
                 <span v-html="name"></span>
             </a>
 
@@ -285,7 +285,7 @@
                     :class="{ 'btn-disabled': strokeSize === 1 }"
                     @click.stop="strokeSize = 1"
                 >
-                    <i class="fa-regular fa-paintbrush-fine" aria-hidden="true"></i>
+                    <i class="fa-regular fa-paintbrush" aria-hidden="true"></i>
                     <span class="sr-only" v-html="trans('thin-stroke')"></span>
                 </button>
                 <button
@@ -363,7 +363,7 @@
                     :title="trans('auto-font')"
                     @click.stop="autoFont()"
                 >
-                    <i class="fa-regular fa-text-size" aria-hidden="true"></i>
+                    <i class="fa-regular fa-font-height" aria-hidden="true"></i>
                     <span class="sr-only">{{ trans('auto-font') }}</span>
                 </button>
 
@@ -395,7 +395,7 @@
                     :title="trans('push-to-front')"
                     @click.stop="pushTo('front')"
                 >
-                    <i class="fa-regular fa-up-to-line" aria-hidden="true"></i>
+                    <i class="fa-regular fa-arrow-up" aria-hidden="true"></i>
                     <span class="sr-only" v-html="trans('push-to-front')"></span>
                 </button>
                 <button
@@ -403,7 +403,7 @@
                     :title="trans('push-to-back')"
                     @click.stop="pushTo('back')"
                 >
-                    <i class="fa-regular fa-down-to-line" aria-hidden="true"></i>
+                    <i class="fa-regular fa-arrow-down" aria-hidden="true"></i>
                     <span class="sr-only" v-html="trans('push-to-back')"></span>
                 </button>
             </div>
@@ -447,14 +447,14 @@
                     class="btn2 btn-sm join-item"
                     :title="trans('add-text')"
                     :class="{ 'btn-disabled': toolbarMode === 'text' }">
-                    <i class="fa-regular fa-text" aria-hidden="true" />
+                    <i class="fa-regular fa-font" aria-hidden="true" />
                     <span class="sr-only" v-html="trans('add-text')"></span>
                 </button>
                 <button
                     @click="toggleDrawing"
                     :title="trans('start-drawing')"
                     class="btn2 btn-sm join-item">
-                    <i class="fa-regular fa-scribble" aria-hidden="true" />
+                    <i class="fa-regular fa-pen" aria-hidden="true" />
                     <span class="sr-only" v-html="trans('start-drawing')"></span>
                 </button>
             </div>

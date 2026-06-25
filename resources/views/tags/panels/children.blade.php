@@ -49,7 +49,7 @@ $direct = $entity->child->entities()->count();
                 </x-dropdowns.item>
                 <x-dropdowns.item
                     :link="route('entities.show', [$campaign, $entity, 'm' => \App\Enums\Descendants::All, '#tag-children'])"
-                    icon="fa-regular fa-filter-list"
+                    icon="fa-regular fa-filter"
                     :active="$allMembers"
                 >
                     {{ __('crud.filters.lists.desktop.all', ['count' => $all]) }}

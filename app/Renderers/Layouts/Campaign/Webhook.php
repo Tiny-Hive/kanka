@@ -77,7 +77,7 @@ class Webhook extends Layout
             ],
             'test' => [
                 'label' => 'campaigns/webhooks.actions.test',
-                'icon' => 'fa-regular fa-webhook',
+                'icon' => 'fa-regular fa-link',
                 'route' => 'webhooks.test',
             ],
             'disable' => [

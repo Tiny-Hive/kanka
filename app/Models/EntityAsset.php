@@ -158,9 +158,9 @@ class EntityAsset extends Model
 
         return match ($this->image->ext) {
             'pdf' => 'fa-regular fa-file-pdf',
-            'json' => 'fa-regular fa-brackets-curly',
-            'mp3', 'mp4', 'ogg' => 'fa-regular fa-file-music',
-            'xls', 'xlsx' => 'fa-regular fa-file-xls',
+            'json' => 'fa-regular fa-code',
+            'mp3', 'mp4', 'ogg' => 'fa-regular fa-file-audio',
+            'xls', 'xlsx' => 'fa-regular fa-file-excel',
             'csv' => 'fa-regular fa-file-csv',
             default => 'fa-regular fa-file',
         };

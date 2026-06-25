@@ -82,7 +82,7 @@
 
         <div id="roadmap" class="flex flex-col gap-4 bg-box p-4 rounded-2xl">
             <h2 class="text-2xl">
-                <x-icon class="fa-regular fa-box-ballot" />
+                <x-icon class="fa-regular fa-box" />
                 {{ __('subscriptions/finish.roadmap.title') }}
             </h2>
             <p>{!! __('subscriptions/finish.roadmap.helper', [

@@ -78,7 +78,7 @@ class SetupService
                 'fixed' => true,
             ],
             'world' => [
-                'icon' => 'fa-solid fa-mountains',
+                'icon' => 'fa-solid fa-mountain',
                 'label' => 'sidebar.world',
                 'module' => false,
                 'fixed' => true,

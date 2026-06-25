@@ -118,7 +118,7 @@ const toggleHeaderRow = () => {
             :class="buttonClass(false)"
             title="Add row"
         >
-            <i class="fa-regular fa-table-rows" aria-hidden="true" />
+            <i class="fa-regular fa-table" aria-hidden="true" />
             <i class="fa-regular fa-plus text-[8px]" aria-hidden="true" />
         </button>
         <button
@@ -134,7 +134,7 @@ const toggleHeaderRow = () => {
             :class="buttonClass(false)"
             title="Delete row"
         >
-            <i class="fa-regular fa-table-rows" aria-hidden="true" />
+            <i class="fa-regular fa-table" aria-hidden="true" />
             <i class="fa-regular fa-minus text-[8px]" aria-hidden="true" />
         </button>
         <button

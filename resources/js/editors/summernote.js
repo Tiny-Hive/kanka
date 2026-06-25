@@ -61,7 +61,7 @@ const initField = (field) => {
             },*/
         },
         summernoteGallery: {
-            buttonLabel: '<i class="fa-regular fa-folder-image"></i>',
+            buttonLabel: '<i class="fa-regular fa-folder-open"></i>',
             tooltip: summernoteConfig.dataset.galleryTitle,
             source: {
                 // data: [],

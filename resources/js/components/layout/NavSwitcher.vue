@@ -129,7 +129,7 @@
                               {{campaigns.texts.campaigns }}
                             </div>
                             <a v-bind:href="campaigns.urls.reorder" class="text-link" v-if="campaigns.member.length > 0">
-                                <i class="fa-regular fa-arrow-up-arrow-down" aria-hidden="true"></i>
+                                <i class="fa-regular fa-arrows-up-down" aria-hidden="true"></i>
                                 {{ campaigns.texts.reorder}}
                             </a>
                         </div>

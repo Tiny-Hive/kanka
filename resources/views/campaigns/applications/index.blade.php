@@ -67,7 +67,7 @@
                     <x-dropdowns.divider />
                     <x-dropdowns.item
                         :link="route('applications.index', ['campaign' => $campaign, 'filter' => 'all'])"
-                        icon="fa-regular fa-filter-slash"
+                        icon="fa-regular fa-filter-circle-xmark"
                         :css="($filter ?? '') === 'all' ? 'font-semibold' : ''">
                         {{ __('campaigns/applications.filters.all') }}
                     </x-dropdowns.item>

@@ -30,7 +30,7 @@
             </x-dropdowns.item>
 
             <x-dropdowns.item :link="route('entities.entity_abilities.reorder', [$campaign, $entity])"
-                              icon="fa-regular fa-arrow-up-arrow-down">
+                              icon="fa-regular fa-arrows-up-down">
                 <span class="grow">{{ __('entities/abilities.show.reorder') }}</span>
             </x-dropdowns.item>
 

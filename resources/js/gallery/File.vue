@@ -157,7 +157,7 @@
                         @click="resetFocus"
                     >
                         <i
-                            class="fa-solid fa-arrow-up-left-from-circle hover:text-error-content"
+                            class="fa-solid fa-arrow-up-from-bracket hover:text-error-content"
                             aria-label="Focus point"
                         />
                     </div>

@@ -16,7 +16,7 @@
             </span>
         </span>
         <span role="button" @click="showPrice = !showPrice" class="btn2 btn-sm">
-            <x-icon class="fa-regular fa-coins" />
+            <x-icon class="fa-regular fa-coinss" />
             <span x-cloak x-show="!showPrice">
                 {{ __('entities/inventories.togglers.show.price') }}
             </span>
