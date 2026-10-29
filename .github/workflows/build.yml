@@ -24,11 +24,13 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: k3s-microvm   # self-hosted Kata microVM with dind (ARC on centaur); GitHub-hosted runs get 0 steps
     steps:
       - uses: actions/checkout@v4
 
       - uses: docker/setup-buildx-action@v3
+        with:
+          driver: docker   # dockerd's built-in BuildKit (works in the microVM)
 
       - uses: docker/login-action@v3
         with:
@@ -43,5 +45,4 @@ jobs:
           tags: |
             ghcr.io/tiny-hive/kanka:latest
             ghcr.io/tiny-hive/kanka:${{ github.sha }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+          pull: true   # always take the newest php:8.4-fpm-alpine (security fixes)
